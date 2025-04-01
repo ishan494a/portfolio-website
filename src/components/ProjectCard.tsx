@@ -24,7 +24,7 @@ export default function ProjectCard({
       />
       <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-700 mb-4 flex-grow overflow-hidden">{description}</p>
+        <p className="text-gray-400 mb-4 flex-grow overflow-hidden">{description}</p>
         <div className="flex justify-between items-center mt-4">
           {githubUrl !== "" && (<a
             href={githubUrl}

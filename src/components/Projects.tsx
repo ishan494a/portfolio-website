@@ -4,7 +4,7 @@ export default function Projects() {
         <section id="projects" className="min-h-screen flex items-center justify-center bg-black-900 border-t border-gray-700 pt-10">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          <p className="text-lg">Here are some of the projects I ha ve worked on...</p>
+          <p className="text-lg">Here are some of the projects I have worked on...</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <ProjectCard
               title="Workout Tracker"

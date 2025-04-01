@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <div className='font-mono'>
       <Navbar />
-      <Title />
-      <AboutMe />
-      <Projects />
-      <ContactMe />
+      <div className="max-w-screen-xl mx-auto px-4">
+        <Title />
+        <AboutMe />
+        <Projects />
+        <ContactMe />
+      </div>
       <Footer />
     </div>
   );

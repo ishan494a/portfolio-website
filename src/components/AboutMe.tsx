@@ -7,7 +7,7 @@ export default function AboutMe() {
     const aboutText = `Hey there! 👋 I love to code 💻—whether it's solving problems or making cool stuff, I'm all in! Sometimes things break, and I yell at my computer (don't judge 😅), but I always figure it out. Learning and coding every day! 🚀`;
     /* eslint-enable react/no-unescaped-entities */
     return ( 
-        <section id="about" className="min-h-screen flex items-center justify-center bg-black-900">
+        <section id="about" className="min-h-screen flex items-center justify-center bg-black-900 border-t border-gray-700 pt-10">
         <div className="text-center max-w-2xl">
             <h2 className="text-4xl font-bold mb-4 text-white">About Me</h2>
             <p className="text-lg text-white mb-6">{aboutText}

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,8 +49,9 @@ const Navbar = () => {
           <button
             type="button"
             className="text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700"
+            onClick={() => window.open('https://drive.google.com/file/d/10xn7I_P9ZYunY-Gir148wi9QqMR0AHnK/view?usp=sharing', '_blank')}
           >
-            Login
+            Resume
           </button>
           <button
             type="button"

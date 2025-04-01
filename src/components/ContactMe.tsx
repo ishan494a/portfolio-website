@@ -57,7 +57,12 @@ export default function ContactMe() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-3 rounded-lg backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            style={{
+                padding: '12px',
+                borderRadius: '8px',
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+              }}
           />
           <input
             type="email"

@@ -7,7 +7,10 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className='font-mono bg-gray text-white'>
+      <div
+        className='font-mono bg-gray text-white'
+        style={{ backgroundColor: 'rgb(13, 13, 13)', color: '#ffffff' }} // Inline styles here
+      >
       <Navbar />
       <div className="max-w-screen-xl mx-auto px-4">
         <Title />

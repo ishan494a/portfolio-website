@@ -9,7 +9,7 @@ export default function Projects() {
             <ProjectCard
               title="Workout Tracker"
               description="A React Native workout tracker that helps users log workouts and track progress."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="images/workoutapp.png"
               githubUrl="https://github.com/ishan494a/workout-tracker"
               liveUrl="https://www.youtube.com/shorts/fvI57J8qrq8"
               deployedUrl="https://workout-tracker-frontend.vercel.app/"
@@ -17,7 +17,7 @@ export default function Projects() {
             <ProjectCard
               title="Healthcare App"
               description="A mobile-based healthcare app designed to streamline patient registration and data collection during healthcare camps."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="images/healthcareapp.png"
               githubUrl="https://github.com/ShaimaaAliECE/group-project-se3350-group18"
               liveUrl=""
               deployedUrl="http://34.172.112.160:8081/"
@@ -25,7 +25,7 @@ export default function Projects() {
             <ProjectCard
               title="Logistics Web App"
               description="A web application for logistics management, built with React and Node.js."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="/images/logisticsapp.png"
               githubUrl="https://github.com/ishan494a/LogisticsWebApp"
               liveUrl=""
               deployedUrl="https://www.gmscs.ca"
@@ -33,7 +33,7 @@ export default function Projects() {
             <ProjectCard
               title="Stranded - 3D Game"
               description="A 3D game developed using Unity, where players navigate through a mysterious island."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="/images/stranded.png"
               githubUrl=""
               liveUrl="https://www.youtube.com/watch?v=3VmpwZWpmxg"
               deployedUrl=""
@@ -41,7 +41,7 @@ export default function Projects() {
             <ProjectCard
               title="SkillSync AI - Resume Review"
               description="An GPT powered resume review tool that provides feedback and suggestions for improvement."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="images/skillsync.png"
               githubUrl="http://github.com/ishan494a/skillsyncAI"
               liveUrl=""
               deployedUrl=""
@@ -49,7 +49,7 @@ export default function Projects() {
             <ProjectCard
               title="Whack-a-Mole"
               description="A fun and interactive Whack-a-Mole game built with Java and JavaFX using software design principles."
-              imageUrl="https://placehold.co/600x400"
+              imageUrl="/images/whackamole.png"
               githubUrl="https://github.com/ishan494a/Whack-A-Mole"
               liveUrl=""
               deployedUrl=""

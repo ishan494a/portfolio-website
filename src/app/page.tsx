@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className='font-mono'>
+    <div className='font-mono bg-gray text-white'>
       <Navbar />
       <div className="max-w-screen-xl mx-auto px-4">
         <Title />

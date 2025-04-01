@@ -12,7 +12,7 @@ export default function Projects() {
               imageUrl="images/workoutapp.png"
               githubUrl="https://github.com/ishan494a/workout-tracker"
               liveUrl="https://www.youtube.com/shorts/fvI57J8qrq8"
-              deployedUrl="https://workout-tracker-frontend.vercel.app/"
+              deployedUrl=""
             />
             <ProjectCard
               title="Healthcare App"

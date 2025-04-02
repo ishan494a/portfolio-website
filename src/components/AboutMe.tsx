@@ -36,7 +36,19 @@ export default function AboutMe() {
                 <span className="text-white mt-2">JavaScript</span>
             </div>
             <div className="flex flex-col items-center">
-                <DiJava size={40} style={{ color: '#007396' }} />
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" 
+                    alt="TypeScript" 
+                    className="w-10 h-10 bg-gray-200 rounded-full p-1" 
+                />
+                <span className="text-white mt-2">TypeScript</span>
+            </div>
+            <div className="flex flex-col items-center">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/ff/C-Sharp_Logo.svg" 
+                    alt="C#" 
+                    className="w-10 h-10 bg-gray-200 rounded-full p-1" 
+                />
                 <span className="text-white mt-2">C#</span>
             </div>
             <div className="flex flex-col items-center">

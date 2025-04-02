@@ -1,6 +1,6 @@
 import { FaJava, FaPython, FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt, FaAws, FaGoogle } from 'react-icons/fa';
 import { SiPostgresql, SiMongodb, SiRedis, SiGraphql, SiJenkins, SiSpringboot, SiExpress } from 'react-icons/si';
-import { DiJavascript1, DiJava } from 'react-icons/di';
+import { DiJavascript1 } from 'react-icons/di';
 
 export default function AboutMe() {
     /* eslint-disable react/no-unescaped-entities */

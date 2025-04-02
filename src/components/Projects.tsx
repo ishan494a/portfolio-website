@@ -20,7 +20,7 @@ export default function Projects() {
               imageUrl="images/healthcareapp.png"
               githubUrl="https://github.com/ShaimaaAliECE/group-project-se3350-group18"
               liveUrl=""
-              deployedUrl="http://34.172.112.160:8081/"
+              deployedUrl="http://34.27.213.245:8081/"
             />
             <ProjectCard
               title="Logistics Web App"

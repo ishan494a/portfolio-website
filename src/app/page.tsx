@@ -4,6 +4,7 @@ import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
 import Footer from '@/components/Footer';
+import WorkEx from '@/components/WorkEx';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="max-w-screen-xl mx-auto px-4">
         <Title />
         <AboutMe />
+        {/* <WorkEx /> */}
         <Projects />
         <ContactMe />
       </div>

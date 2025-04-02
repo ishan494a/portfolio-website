@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -26,12 +25,11 @@ const Navbar = () => {
   return (
     <nav className="bg-black fixed w-full z-50 top-0 left-0 border-b border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center space-x-3">
+        <a href="#home" onClick={() => handleLinkClick("home")} className="flex items-center space-x-3">
           <span className="self-center text-3xl text-white">
             Ishan Jain
           </span>
-        </Link>
-
+        </a>
         <div className="hidden md:flex md:items-center md:space-x-8 md:ml-auto">
           {["Home", "About", "Projects", "Contact"].map((item) => (
             <button

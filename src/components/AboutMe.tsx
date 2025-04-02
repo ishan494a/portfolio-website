@@ -1,7 +1,6 @@
 import { FaJava, FaPython, FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt, FaAws, FaGoogle } from 'react-icons/fa';
 import { SiPostgresql, SiMongodb, SiRedis, SiGraphql, SiJenkins, SiSpringboot, SiExpress } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
-
 export default function AboutMe() {
     /* eslint-disable react/no-unescaped-entities */
     const aboutText = `Hey there! 👋 I love to code 💻—whether it's solving problems or making cool stuff, I'm all in! Sometimes things break, and I yell at my computer (don't judge 😅), but I always figure it out. Learning and coding every day! 🚀`;
@@ -12,7 +11,6 @@ export default function AboutMe() {
             <h2 className="text-4xl font-bold mb-4 text-white">About Me</h2>
             <p className="text-lg text-white mb-6">{aboutText}
             </p>
-            
             <div className="flex flex-wrap justify-center gap-6">
             {/* Programming Languages */}
             <div className="flex flex-col items-center">

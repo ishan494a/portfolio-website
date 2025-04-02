@@ -3,7 +3,7 @@ import { SiPostgresql, SiMongodb, SiRedis, SiGraphql, SiJenkins, SiSpringboot, S
 import { DiJavascript1 } from 'react-icons/di';
 export default function AboutMe() {
     /* eslint-disable react/no-unescaped-entities */
-    const aboutText = `Hey there! 👋 I love to code 💻—whether it's solving problems or making cool stuff, I'm all in! Sometimes things break, and I yell at my computer (don't judge 😅), but I always figure it out. Learning and coding every day! 🚀`;
+    const aboutText = `Hey! 👋 I love to code 💻—whether it's solving problems or making cool stuff, I'm all in! Sometimes things break, and I yell at my computer (don't judge 😅), but I always figure it out. Learning and coding every day! 🚀`;
     /* eslint-enable react/no-unescaped-entities */
     return ( 
         <section id="about" className="min-h-screen flex items-center justify-center bg-black-900 border-t border-gray-700 pt-10 pb-10">

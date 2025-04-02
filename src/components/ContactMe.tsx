@@ -46,7 +46,7 @@ export default function ContactMe() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center bg-black-900 border-t border-gray-700 pt-10">
+    <section id="contact" className="min-h-screen flex items-center justify-center bg-black-900 border-t border-gray-700 pt-10 pb-10">
       <div className="bg-white/5 backdrop-blur-lg p-6 rounded-2xl shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold mb-4 text-center">Contact Me</h2>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">

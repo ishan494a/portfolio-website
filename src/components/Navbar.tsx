@@ -4,8 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-
+  const [loggedIn, setLoggedIn] = useState(false);
+  const className = loggedIn
+    ? "text-xl bg-red-700 hover:bg-red-800 focus:outline-none font-medium rounded-lg text-sm px-6 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700"
+    : "text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-6 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700";
   const handleLinkClick = (section: string) => {
     setMenuOpen(false);
     setTimeout(() => {
@@ -19,6 +21,16 @@ const Navbar = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }, 50);
+  };
+  const handleSignIn = () => {
+    if(loggedIn) {
+      setLoggedIn(false);
+      alert("Logged out successfully");
+    }
+    else {
+      setLoggedIn(true);
+      alert("Logged in successfully");
+    }
   };
   
 
@@ -45,10 +57,10 @@ const Navbar = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 md:ml-8">
           <button
             type="button"
-            className="text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700"
-            onClick={() => window.open('https://drive.google.com/file/d/10xn7I_P9ZYunY-Gir148wi9QqMR0AHnK/view?usp=sharing', '_blank')}
+            className={className}
+            onClick={() => handleSignIn()}
           >
-            Resume
+            {loggedIn ? "Logout" : "Login"}
           </button>
           <button
             type="button"

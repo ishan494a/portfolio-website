@@ -9,6 +9,7 @@ const Navbar = () => {
   const handleLinkClick = (section: string) => {
     setMenuOpen(false);
     setTimeout(() => {
+      
       if (section === "home") {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;

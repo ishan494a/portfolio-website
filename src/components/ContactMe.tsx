@@ -8,7 +8,7 @@ import emailjs from 'emailjs-com';
 export default function ContactMe() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [messageStatus, setMessageStatus] = useState("");
-
+  const [loading, setLoading] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -16,7 +16,10 @@ export default function ContactMe() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      alert("Please enter a valid email address.");
+      setMessageStatus("emailerror");
+      setTimeout(() => {
+        setMessageStatus("");
+      }, 5000);
       return;
     }
 
@@ -25,19 +28,26 @@ export default function ContactMe() {
       email: formData.email,
       message: formData.message,
     };
+    setLoading(true);
+
+    // Debugging
+    // setTimeout(() => {
+    //   setLoading(false);
+    //   setMessageStatus('error');
+    // }, 1000);
 
     emailjs.init(EMAIL_API_KEY);
     emailjs.send(SERVICE_ID, TEMPLATE_ID, params).then(
       () => {
+        setLoading(false);
         setMessageStatus('success');
+        setFormData({ name: "", email: "", message: "" });
       },
       () => {
+        setLoading(false);
         setMessageStatus('error');
       }
     );
-
-    // Reset form data
-    setFormData({ name: "", email: "", message: "" });
 
     // Hide messageStatus after 5 seconds
     setTimeout(() => {
@@ -56,6 +66,7 @@ export default function ContactMe() {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
+            disabled={loading}
             required
             style={{
                 padding: '12px',
@@ -70,6 +81,7 @@ export default function ContactMe() {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
+            disabled={loading}
             required
             style={{
                 padding: '12px',
@@ -83,6 +95,7 @@ export default function ContactMe() {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
+            disabled={loading}
             required
             style={{
                 padding: '12px',
@@ -93,10 +106,16 @@ export default function ContactMe() {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg py-2 px-4"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg py-2 px-4 relative min-h-[3rem]"
+            disabled={loading}
           >
-            Send Message
+            {loading ? (
+              <div className="animate-spin h-5 w-5 border-4 border-t-transparent border-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+            ) : (
+              "Send Message"
+            )}
           </button>
+
         </form>
 
         {/* Message Status */}
@@ -106,7 +125,7 @@ export default function ContactMe() {
               messageStatus === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
             }`}
           >
-            {messageStatus === 'success' ? 'Message sent successfully!' : 'Failed to send message. Please try again.'}
+            {messageStatus === 'success' ? 'Message sent successfully!' : (messageStatus === "emailerror" ? 'Enter a valid email address.' : 'Failed to send message. Please try again.')}
           </div>
         )}
       </div>

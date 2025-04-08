@@ -7,6 +7,14 @@ export default function Projects() {
           <p className="text-lg">Here are some of the projects I have worked on...</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <ProjectCard
+              title="BidNet"
+              description="A real-time auction platform with WebSockets for live bidding and multithreading for concurrent transactions, using C++, Crow framework, and PostgreSQL."
+              imageUrl="/images/bidnet.png"
+              githubUrl="https://github.com/ishanuwo/BidNet"
+              liveUrl=""
+              deployedUrl=""
+            />
+            <ProjectCard
               title="Workout Tracker"
               description="A React Native workout tracker that helps users log workouts and track progress."
               imageUrl="images/workoutapp.png"
@@ -43,14 +51,6 @@ export default function Projects() {
               description="An GPT powered resume review tool that provides feedback and suggestions for improvement."
               imageUrl="images/skillsync.png"
               githubUrl="http://github.com/ishan494a/skillsyncAI"
-              liveUrl=""
-              deployedUrl=""
-            />
-            <ProjectCard
-              title="Whack-a-Mole"
-              description="A fun and interactive Whack-a-Mole game built with Java and JavaFX using software design principles."
-              imageUrl="/images/whackamole.png"
-              githubUrl="https://github.com/ishan494a/Whack-A-Mole"
               liveUrl=""
               deployedUrl=""
             />

@@ -40,7 +40,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="text-red-500 hover:underline flex items-center gap-2"
           >
-            <FaYoutube size={20} /> Live Demo
+            <FaYoutube size={20} /> Demo
           </a>)}
           {deployedUrl !== "" && (<a
             href={deployedUrl}
@@ -48,7 +48,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="text-green-500 hover:underline flex items-center gap-2"
           >
-            <FaExternalLinkAlt size={20} /> Deployed
+            <FaExternalLinkAlt size={20} /> Visit
           </a>)}
         </div>
       </div>

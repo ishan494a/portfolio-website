@@ -28,6 +28,8 @@ export default function ProfileCard() {
                             <a
                                 href="https://github.com/ishan494a"
                                 className="hover:text-violet-400 transition-colors duration-300"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <FaGithub />
                             </a>

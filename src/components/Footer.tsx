@@ -20,12 +20,16 @@ export default function Footer() {
         </a>
         <a
           href="https://github.com/ishan494a"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-violet-400 transition-colors duration-300"
         >
         <FaGithub />
         </a>
         <a
           href="https://drive.google.com/file/d/10xn7I_P9ZYunY-Gir148wi9QqMR0AHnK/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-green-400 transition-colors duration-300"
         >
         <FaFile />

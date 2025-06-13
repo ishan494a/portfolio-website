@@ -3,7 +3,7 @@ import { useState } from "react";
 const EMAIL_API_KEY = process.env.NEXT_PUBLIC_EMAIL_API_KEY as string;
 const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID as string;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 export default function ContactMe() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });

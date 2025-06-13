@@ -5,7 +5,7 @@ export default function ProfileCard() {
         <div className="w-96 px-6 py-6 text-center rounded-lg lg:mt-0 xl:px-10 border-2 border-gray-700 transition-transform transform hover:scale-101"
         style={{ backgroundColor: 'rgb(15, 15, 15)', color: '#ffffff' }}>
             <div className="space-y-4 xl:space-y-6">
-                <img className="mx-auto rounded-full h-36 w-36" src="https://media.licdn.com/dms/image/v2/D4E03AQF-U8bSpJYl7w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728510359001?e=1749081600&v=beta&t=Z1RAzL7--BCQXaYbGtBDx7XlD0EKJrfNSZBHXWElyy8" alt="author avatar" />
+                <img className="mx-auto rounded-full h-36 w-36" src="/images/ProfilePic.jpeg" alt="author avatar" />
                 <div className="space-y-2">
                     <div className="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
                         <h3 className="text-white">Ishan Jain</h3>

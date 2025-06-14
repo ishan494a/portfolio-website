@@ -36,8 +36,7 @@ export default function ContactMe() {
     //   setMessageStatus('error');
     // }, 1000);
 
-    emailjs.init(EMAIL_API_KEY);
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, params).then(
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, params, EMAIL_API_KEY).then(
       () => {
         setLoading(false);
         setMessageStatus('success');

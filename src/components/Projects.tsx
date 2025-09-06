@@ -36,7 +36,7 @@ export default function Projects() {
               imageUrl="/images/logisticsapp.png"
               githubUrl="https://github.com/ishan494a/LogisticsWebApp"
               liveUrl=""
-              deployedUrl="https://www.gmscs.ca"
+              deployedUrl=""
             />
             <ProjectCard
               title="Stranded - 3D Game"
